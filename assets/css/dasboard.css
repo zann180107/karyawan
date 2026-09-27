@@ -1,0 +1,527 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#edf2f7;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    position:fixed;
+
+    width:260px;
+
+    height:100vh;
+
+    background:#1e293b;
+
+    color:white;
+
+    left:0;
+
+    top:0;
+
+    transition:.3s;
+
+}
+
+.logo{
+
+    padding:25px;
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    background:#0f172a;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    margin-top:30px;
+
+}
+
+.sidebar ul li{
+
+    padding:18px 25px;
+
+}
+
+.sidebar ul li:hover{
+
+    background:#334155;
+
+    cursor:pointer;
+
+}
+
+.sidebar ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.sidebar ul li i{
+
+    width:30px;
+
+}
+
+/* Main */
+
+.main{
+
+    margin-left:260px;
+
+    padding:30px;
+
+}
+
+/* Navbar */
+
+.topbar{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:15px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.profile img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    margin-left:10px;
+
+}
+
+/* Card */
+
+.card-box{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-top:25px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.card-icon{
+
+    font-size:45px;
+
+    color:#16a34a;
+
+}
+
+.number{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+.title{
+
+    color:gray;
+
+}
+
+.card-box{
+    transition:0.3s;
+}
+
+.card-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0px 10px 25px rgba(0,0,0,.25);
+}
+
+.navbar{
+
+    border-radius:20px;
+
+}
+
+.navbar img{
+
+    object-fit:cover;
+
+}
+
+.navbar h3{
+
+    color:#198754;
+
+}
+
+/* ===========================
+   Dashboard Card
+=========================== */
+
+.dashboard-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    color:white;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card .card-icon{
+
+    font-size:45px;
+
+    opacity:.9;
+
+}
+
+.dashboard-card h6{
+
+    font-size:16px;
+
+    margin-bottom:8px;
+
+}
+
+.dashboard-card h2{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+.dashboard-card small{
+
+    opacity:.9;
+
+}
+
+/* Warna */
+
+.green{
+
+    background:linear-gradient(135deg,#00C853,#43A047);
+
+}
+
+.blue{
+
+    background:linear-gradient(135deg,#2196F3,#1565C0);
+
+}
+
+.orange{
+
+    background:linear-gradient(135deg,#FF9800,#EF6C00);
+
+}
+
+.red{
+
+    background:linear-gradient(135deg,#E53935,#C62828);
+
+}
+
+.card{
+
+border:none;
+
+border-radius:18px;
+
+}
+
+.card-header{
+
+font-weight:bold;
+
+font-size:17px;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#f8fff5;
+
+}
+
+.badge{
+
+    padding:8px 12px;
+
+    font-size:13px;
+
+}
+
+.sensor-widget{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:25px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+height:100%;
+
+}
+
+.sensor-widget:hover{
+
+transform:translateY(-8px);
+
+}
+
+.sensor-icon{
+
+font-size:40px;
+
+color:#16A34A;
+
+margin-bottom:15px;
+
+}
+
+.sensor-title{
+
+font-size:18px;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+.sensor-value{
+
+font-size:34px;
+
+font-weight:bold;
+
+color:#198754;
+
+margin-bottom:10px;
+
+}
+
+.sensor-status{
+
+margin-top:10px;
+
+}
+.progress{
+    border-radius:20px;
+    background:#e9ecef;
+}
+
+.progress-bar{
+    border-radius:20px;
+    transition:width .5s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.gauge{
+
+width:170px;
+
+height:170px;
+
+border-radius:50%;
+
+margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+font-weight:bold;
+
+position:relative;
+
+background:#fff;
+
+}
+
+.gauge::before{
+
+content:"";
+
+position:absolute;
+
+width:140px;
+
+height:140px;
+
+border-radius:50%;
+
+background:#fff;
+
+}
+
+.value{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.suhu{
+
+background:conic-gradient(
+
+#dc3545 0deg,
+
+#dc3545 210deg,
+
+#e9ecef 210deg
+
+);
+
+}
+
+.humidity{
+
+background:conic-gradient(
+
+#0d6efd 0deg,
+
+#0d6efd 245deg,
+
+#e9ecef 245deg
+
+);
+
+}
+
+.ph{
+
+background:conic-gradient(
+
+#198754 0deg,
+
+#198754 190deg,
+
+#e9ecef 190deg
+
+);
+}
+
+.switchAktuator{
+
+width:55px;
+
+height:28px;
+
+cursor:pointer;
+
+}
+
+.switchAktuator:checked{
+
+background-color:#198754;
+
+border-color:#198754;
+
+}
+.list-group-item{
+
+font-size:15px;
+
+padding:14px;
+
+}
+
+.card-header h5{
+
+margin-bottom:0;
+
+font-weight:600;
+
+}
+#sensorChart{
+
+height:330px !important;
+
+}
